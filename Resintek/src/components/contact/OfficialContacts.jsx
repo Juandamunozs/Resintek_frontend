@@ -81,7 +81,7 @@ export default function OfficialContacts() {
           rel="noopener noreferrer"
           className="social-button"
         >
-          <img src="/logo_whatsapp.png" alt="Whatsapp" className="social-icon whatsapp-icon" />
+          <img src="/Logo_whatsapp.png" alt="Whatsapp" className="social-icon whatsapp-icon" />
         </a>
       </div>
     </section>

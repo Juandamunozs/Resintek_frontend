@@ -31,7 +31,7 @@ const AboutUs = () => {
 
         <div className="aboutus-image">
           <img
-            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQgIo_SBuLhu7qBszbbW-h4UFU6ecMHTq9VQw&s"
+            src="/Logo_empresa.png"
             alt="Equipo Resintek trabajando"
           />
         </div>
