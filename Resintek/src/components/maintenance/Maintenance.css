@@ -1,0 +1,118 @@
+.maintenance-hero {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(135deg, #f0f4f8, #dbe9f6); /* Fondo claro */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  box-sizing: border-box;
+  z-index: 9999;
+}
+
+.maintenance-content {
+  position: relative;
+  max-width: 500px;
+  width: 100%;
+  padding: 30px 20px;
+  background: rgba(255, 255, 255, 0.6);
+  border: 1px solid rgba(0, 0, 0, 0.05);
+  border-radius: 16px;
+  backdrop-filter: blur(12px);
+  box-shadow: 0 8px 24px rgba(0,0,0,0.1);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.maintenance-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(8px);
+  z-index: 0;
+}
+
+/* Textos */
+.maintenance-logo {
+  font-size: 2rem;
+  font-weight: bold;
+  letter-spacing: 2px;
+  color: #00a8cc; /* Cyan elegante */
+  margin-bottom: 20px;
+}
+
+.maintenance-content h1 {
+  font-size: 1.6rem;
+  margin-bottom: 10px;
+  color: #1e2a38;
+}
+
+.maintenance-content p {
+  font-size: 1rem;
+  color: #4b5c6b;
+  margin-bottom: 25px;
+}
+
+/* Loader Stripe */
+.maintenance-bar-loader {
+  position: relative;
+  height: 8px;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+  overflow: hidden;
+  margin: 0 auto 20px auto;
+}
+
+.maintenance-bar-loader span {
+  position: absolute;
+  width: 40%;
+  height: 100%;
+  background: linear-gradient(90deg, #00a8cc, #0077a8);
+  animation: slide 1.8s infinite linear;
+}
+
+@keyframes slide {
+  0% { left: -40%; }
+  100% { left: 100%; }
+}
+
+/* WhatsApp Contact */
+.contact-whatsapp p {
+  color: #4b5c6b;
+  font-size: 0.9rem;
+  margin-bottom: 10px;
+}
+
+.whatsapp-button img {
+  width: 48px;
+  height: 48px;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+  opacity: 0.9;
+}
+
+.whatsapp-button img:hover {
+  transform: scale(1.1);
+  opacity: 1;
+}
+
+/* Responsive */
+@media (max-width: 480px) {
+  .maintenance-content {
+    padding: 30px 15px;
+  }
+
+  .maintenance-logo {
+    font-size: 1.8rem;
+  }
+
+  .maintenance-content h1 {
+    font-size: 1.4rem;
+  }
+}

@@ -1,0 +1,106 @@
+.notfound-hero {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(135deg, #f0f4f8, #dbe9f6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  box-sizing: border-box;
+  z-index: 9999;
+}
+
+.notfound-content {
+  position: relative;
+  max-width: 500px;
+  width: 100%;
+  padding: 30px 20px;
+  background: rgba(255, 255, 255, 0.6);
+  border: 1px solid rgba(0, 0, 0, 0.05);
+  border-radius: 16px;
+  backdrop-filter: blur(14px);
+  box-shadow: 0 8px 24px rgba(0,0,0,0.1);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.notfound-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(8px);
+  z-index: 0;
+}
+
+.notfound-logo {
+  font-size: 2rem;
+  font-weight: bold;
+  letter-spacing: 2px;
+  color: #00a8cc;
+  margin-bottom: 20px;
+}
+
+.notfound-content h1 {
+  font-size: 1.6rem;
+  margin-bottom: 10px;
+  color: #1e2a38;
+}
+
+.notfound-content p {
+  font-size: 1rem;
+  color: #4b5c6b;
+  margin-bottom: 25px;
+}
+
+.back-home {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #00a8cc;
+  color: #ffffff;
+  border-radius: 8px;
+  text-decoration: none;
+  margin-bottom: 20px;
+  transition: background-color 0.3s ease;
+}
+
+.back-home:hover {
+  background-color: #0077a8;
+}
+
+.contact-whatsapp p {
+  color: #4b5c6b;
+  font-size: 0.9rem;
+  margin-bottom: 10px;
+}
+
+.whatsapp-button img {
+  width: 48px;
+  height: 48px;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+  opacity: 0.9;
+}
+
+.whatsapp-button img:hover {
+  transform: scale(1.1);
+  opacity: 1;
+}
+
+@media (max-width: 480px) {
+  .notfound-content {
+    padding: 30px 15px;
+  }
+
+  .notfound-logo {
+    font-size: 1.8rem;
+  }
+
+  .notfound-content h1 {
+    font-size: 1.4rem;
+  }
+}

@@ -1,0 +1,47 @@
+.Header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #0077b6;
+  padding: 22px 46px;
+  position: sticky;
+  margin-top: -1%;
+}
+
+.Header-logo a {
+  color: #ffffff;
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.Header-links {
+  list-style: none;
+  display: flex;
+  gap: 24px;
+  margin: 0;
+}
+
+.Header-links a {
+  color: #ecf0f1;
+  text-decoration: none;
+  font-size: 1rem;
+  transition: color 0.3s;
+}
+
+.Header-links a:hover {
+  color: #00c3ff;
+}
+
+/* Responsive (Optional) */
+@media (max-width: 768px) {
+  .Header-links {
+    flex-direction: column;
+    background: #2c3e50;
+    position: absolute;
+    top: 64px;
+    right: 0;
+    padding: 16px;
+    display: none; 
+  }
+}

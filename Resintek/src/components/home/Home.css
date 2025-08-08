@@ -1,0 +1,119 @@
+.home-wrapper-padre {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  font-family: 'Poppins', sans-serif;
+  color: #1e2a38;
+  background: linear-gradient(to bottom, #f4f7fa, #ffffff);
+}
+
+/* Hero Section */
+.home-hero-padre {
+  height: 40vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #00c3ff, #0077b6);
+  color: #fff;
+  text-align: center;
+  padding: 0 20px;
+}
+
+.hero-content-padre h1 {
+  font-size: 2.4rem;
+  margin-bottom: 15px;
+}
+
+.hero-content-padre p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+
+.cta-button-padre {
+  display: inline-block;
+  padding: 12px 24px;
+  background: #ffffff;
+  color: #0077b6;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background 0.3s ease;
+}
+
+.cta-button-padre:hover {
+  background: #d1ecf9;
+}
+
+/* Services Section */
+.services-section-padre {
+  text-align: center; 
+  margin-bottom: 2%;
+  padding: 40px 20px;
+}
+
+.services-section-padre h2 {
+  font-size: 2rem;
+  margin-bottom: 40px;
+  color: #1e2a38;
+}
+
+.services-grid-padre {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.service-card-padre {
+  background: rgba(255, 255, 255, 0.9);
+  backdrop-filter: blur(6px);
+  padding: 25px;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  width: 280px;
+  transition: transform 0.3s ease;
+  text-align: center;
+}
+
+.service-card-padre:hover {
+  transform: translateY(-5px);
+}
+
+.service-card-padre h3 {
+  font-size: 1.3rem;
+  margin-bottom: 10px;
+  color: #0077b6;
+} 
+
+.service-card-padre p {
+  font-size: 0.95rem;
+  margin-bottom: 15px;
+  color: #4a4a4a;
+}
+
+.ver-mas-btn-padre {
+  display: inline-block;
+  padding: 8px 16px;
+  background: #0077b6;
+  color: #ffffff;
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: bold;
+  transition: background 0.3s ease;
+}
+
+.ver-mas-btn-padre:hover {
+  background: #005f8d;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .hero-content-padre h1 {
+    font-size: 1.8rem;
+  }
+
+  .services-grid-padre {
+    flex-direction: column;
+    align-items: center;
+  }
+}

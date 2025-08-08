@@ -1,0 +1,41 @@
+.home-footer {
+  background: #1e2a38;
+  color: #ffffff;
+  text-align: center;
+  padding: 20px;
+  font-size: 0.9rem;
+}
+
+.social-icons {
+  margin-top: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px; 
+}
+
+.social-button {
+  display: inline-block;
+  margin: 0 10px;
+  transition: transform 0.2s ease;
+}
+
+.social-button:hover {
+  transform: scale(1.1);
+}
+
+.social-icon {
+  width: 32px;
+  height: 32px;
+}
+
+.facebook-icon {
+  width: 26px;
+  height: 26px;
+}
+
+.whatsapp-icon {
+  width: 46px;
+  height: 46px;
+}
+
