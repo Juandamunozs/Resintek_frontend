@@ -3,6 +3,7 @@ import './Pisos.css';
 import siteConfig from '../../const/siteConfig';
 import Header from '../../layout/header/Header';
 import Navigation from '../../layout/menu/Navigation';
+import Footer from '../../layout/footer/Footer';
 
 const servicios = [
   {
@@ -57,6 +58,7 @@ const PisosServicio = () => {
           </div>
         ))}
       </div>
+      <Footer />
     </div>
   );
 };

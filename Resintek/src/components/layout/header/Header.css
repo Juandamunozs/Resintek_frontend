@@ -3,9 +3,9 @@
   justify-content: space-between;
   align-items: center;
   background: #0077b6;
-  padding: 22px 46px;
+  padding: 22px 50px;
   position: sticky;
-  margin-top: -1%;
+  top: 0;
 }
 
 .Header-logo a {
@@ -33,7 +33,17 @@
   color: #00c3ff;
 }
 
-/* Responsive (Optional) */
+/* Botón hamburguesa */
+.Header-toggle {
+  display: none;
+  font-size: 1.5rem;
+  background: none;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+}
+
+/* Responsive */
 @media (max-width: 768px) {
   .Header-links {
     flex-direction: column;
@@ -44,4 +54,13 @@
     padding: 16px;
     display: none; 
   }
+
+  .Header-links.show {
+    display: flex;
+  }
+
+  .Header-toggle {
+    display: block;
+  }
 }
+
