@@ -3,6 +3,7 @@ import './Service.css';
 import { Link } from 'react-router-dom';
 import Footer from '../../layout/footer/Footer';
 import Header from '../../layout/header/Header';
+import ServiceReusable from '../../utils/servicios/ServicioReutilizable';
 
 const Service = () => {
   return (
@@ -10,7 +11,8 @@ const Service = () => {
       <Header />
 
       <section className="services-section-service">
-        <h2>Nuestros Servicios</h2>
+        <ServiceReusable />
+        {/* <h2>Nuestros Servicios</h2>
         <div className="services-grid-service">
           <div className="service-card-service">
             <h3>Instalación de Pisos</h3>
@@ -27,7 +29,7 @@ const Service = () => {
             <p>Renovación, reparación y mantenimiento preventivo.</p>
             <Link to="/servicio/mantenimientos" className="ver-mas-btn-service">Ver más</Link>
           </div>
-        </div>
+        </div> */}
       </section>
       <Footer />
     </div>

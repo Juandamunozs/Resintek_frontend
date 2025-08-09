@@ -3,9 +3,10 @@
   justify-content: space-between;
   align-items: center;
   background: #0077b6;
-  padding: 22px 50px;
+  padding: 22px 50px; /* Y = 22px, X = 50px */
   position: sticky;
   top: 0;
+  z-index: 1000; /* para que quede por encima del contenido */
 }
 
 .Header-logo a {
@@ -33,7 +34,7 @@
   color: #00c3ff;
 }
 
-/* Botón hamburguesa */
+/* Botón hamburguesa (oculto en PC) */
 .Header-toggle {
   display: none;
   font-size: 1.5rem;
@@ -43,14 +44,19 @@
   cursor: pointer;
 }
 
-/* Responsive */
+/* Responsive para móviles */
 @media (max-width: 768px) {
+  .Header {
+    padding: 16px 20px; /* Menos espacio para móviles */
+  }
+
   .Header-links {
     flex-direction: column;
     background: #2c3e50;
     position: absolute;
     top: 64px;
     right: 0;
+    width: 200px;
     padding: 16px;
     display: none; 
   }
@@ -63,4 +69,3 @@
     display: block;
   }
 }
-
