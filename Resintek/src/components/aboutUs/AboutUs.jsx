@@ -4,6 +4,7 @@ import siteConfig from '../const/siteConfig';
 import Header from '../layout/header/Header';
 import { getYearsOfExperience } from '../../utils/Utils';
 import Map from '../utils/maps/Maps';
+import Footer from '../layout/footer/Footer';
 
 const AboutUs = () => {
   return (
@@ -58,6 +59,7 @@ const AboutUs = () => {
           <Map />
         </div>
       </div>
+      <Footer />
     </div>
   );
 };

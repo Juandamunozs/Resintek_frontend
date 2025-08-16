@@ -4,9 +4,9 @@
   align-items: center;
   justify-content: center;
   padding: 60px 20px;
-  background: linear-gradient(to bottom, #e9f1f7, #ffffff); 
+  background: linear-gradient(to bottom, #e9f1f7, #ffffff);
   font-family: 'Poppins', sans-serif;
-  color: #2b2b2b; 
+  color: #2b2b2b;
 }
 
 .aboutus-container.reverse {
@@ -21,20 +21,20 @@
 
 .aboutus-content h1 {
   font-size: 2rem;
-  color: #004e89; 
+  color: #004e89;
   margin-bottom: 20px;
 }
 
 .aboutus-content p {
   font-size: 1.05rem;
   line-height: 1.7;
-  color: #444c56; 
+  color: #444c56;
   margin-bottom: 15px;
   text-align: justify;
 }
 
 .aboutus-content strong {
-  color: #1ca9c9; 
+  color: #1ca9c9;
 }
 
 .aboutus-content a {
@@ -57,19 +57,31 @@
 .aboutus-image img {
   width: 100%;
   border-radius: 16px;
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08); 
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
   object-fit: cover;
 }
 
-/* Responsive */
+/* Responsive para móviles y tablets */
 @media (max-width: 768px) {
   .aboutus-container,
   .aboutus-container.reverse {
     flex-direction: column;
+    align-items: center;  
     text-align: center;
+    padding: 15px;
   }
 
   .aboutus-image {
-    padding-top: 0;
+    flex: unset;           
+    max-width: 100%;       
+    padding: 10px;
+  }
+
+  .aboutus-image img {
+    width: 100%;
+    max-width: 350px;      
+    border-radius: 12px;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+    object-fit: cover;
   }
 }

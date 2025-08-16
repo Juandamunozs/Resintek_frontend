@@ -8,19 +8,28 @@ const Header = () => {
 
   return (
     <nav className="Header">
+      {/* Logo */}
       <div className="Header-logo">
-        <Link to="/">{siteConfig.companyName}</Link>
+        <Link to="/">
+          <img
+            src="/Logo_empresa.png"
+            alt={siteConfig.companyName}
+            className="logo-img"
+          />
+          {/* <span className="logo-text">{siteConfig.companyName}</span> */}
+        </Link>
       </div>
 
       {/* Botón hamburguesa para móviles */}
-      <button 
-        className="Header-toggle" 
+      <button
+        className="Header-toggle"
         onClick={() => setMenuOpen(!menuOpen)}
         aria-label="Menú"
       >
         ☰
       </button>
 
+      {/* Links de navegación */}
       <ul className={`Header-links ${menuOpen ? 'show' : ''}`}>
         <li><Link to="/inicio">Inicio</Link></li>
         <li><Link to="/servicios">Servicios</Link></li>
